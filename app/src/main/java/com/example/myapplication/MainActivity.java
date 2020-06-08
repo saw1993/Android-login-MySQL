@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -71,6 +72,10 @@ pb.setVisibility(View.GONE);
                         if (success.equals("1")) {
                             Toast.makeText(MainActivity.this, "Success login : ", Toast.LENGTH_LONG).show();
                             pb.setVisibility(View.GONE);
+                            Intent intent =new Intent (getApplicationContext(),MainUI.class);
+                            startActivity(intent);
+
+
                             }
                         else {Toast.makeText(MainActivity.this, "Login Failed : ", Toast.LENGTH_LONG).show();
                         btn.setVisibility(View.VISIBLE);
