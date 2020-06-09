@@ -73,6 +73,7 @@ pb.setVisibility(View.GONE);
                             Toast.makeText(MainActivity.this, "Success login : ", Toast.LENGTH_LONG).show();
                             pb.setVisibility(View.GONE);
                             Intent intent =new Intent (getApplicationContext(),MainUI.class);
+                            intent.putExtra("Username",name);
                             startActivity(intent);
 
 

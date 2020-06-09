@@ -2,4 +2,5 @@
 <resources>
     <item name="btn" type="id" />
     <item name="btn2" type="id" />
+    <item name="header" type="id" />
 </resources>
